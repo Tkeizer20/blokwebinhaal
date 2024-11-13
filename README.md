@@ -37,14 +37,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.coca-cola.com/us/en/brands/coca-cola 
+  https://www.chocomel.com/nl-nl  
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   home
   <img src="readme-images/page_1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  product pagina 
+  Duurzaamheid pagina 
   <img src="readme-images/page_2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
