@@ -15,8 +15,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#613419;
+	--color-background:#ffb81d;
 }
 
 
@@ -28,4 +28,46 @@
 /****************/
 
 /* jouw code */
+
+
+/* FONT */
+ @font-face {
+	src: url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+	font-family: "titan one", sans-serif;
+	font-weight: 400;
+	font-style: inherit;
+ }
+
+@font-face {
+	font-family:"metabold", sans-serif;
+	src: url(/Users/t.keizer/Documents/GitHub/blokwebinhaal/fonts/metabold.woff2);
+}
+ /* Styles */
+
+:first-child img {
+	margin: 1em;
+	max-width: 100%;
+	/* position: sticky; */
+}
+
+ body{
+	background-color: var(--color-background);
+	color: var(--color-text);
+ }
+
+ h1{
+	font-weight: 400;
+	font-family: 'titan one';
+	font-size: 2em;
+ }
+ 
+ h2{
+	font-weight: 400;
+	font-size: 2em;
+	font-family: 'titan one';
+ }
+
+ h2:nth-of-type(2) {
+text-align: center;
+ } 
 
