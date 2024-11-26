@@ -101,3 +101,7 @@ footer{
 	font-family: 'tita one';
 	font-family: 'titan one';
 }
+ h2:nth-of-type(2) {
+text-align: center;
+ } 
+
