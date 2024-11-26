@@ -38,9 +38,12 @@
 	font-style: inherit;
  }
 
+
 @font-face {
-	font-family:"metabold", sans-serif;
-	src: url(/Users/t.keizer/Documents/GitHub/blokwebinhaal/fonts/metabold.woff2);
+	font-family: "ff-meta-web-pro", sans-serif;
+	src: url(https://use.typekit.net/eal7ghf.css);
+	font-weight: 700;
+	font-style: normal;
 }
  /* Styles */
 
@@ -67,6 +70,37 @@
 	font-family: 'titan one';
  }
 
+
+ h2:nth-of-type(2) {
+    font-weight: 400;
+    line-height: 1.15;
+	text-align: center;
+ } 
+
+ h3{
+	font-weight: 400;
+	font-size: 1rem;
+	font-family: 'titan one';
+ }
+
+ p{
+	font-family: "ff-meta-web-pro";
+	font-weight: 400;
+	font-size: 1.5rem;
+ }
+
+/* picture{
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+} */
+
+
+footer{
+	font-family: 'tita one';
+	font-family: 'titan one';
+}
  h2:nth-of-type(2) {
 text-align: center;
  } 
