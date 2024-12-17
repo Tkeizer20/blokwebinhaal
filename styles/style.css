@@ -62,24 +62,13 @@ img {
 
 
 /*text styles*/
-<<<<<<< HEAD
-h2{
-	font-weight: 400;
-	font-size: 1.6rem;
-	font-family: 'titan one';
- }
-
-
-
-=======
 h1{
 	font-weight: 400;
-	font-size: 2rem;
-	line-height: 1.15;
-	margin-bottom:1.6rem;
-	text-align: center;
+	font-size: 1.6rem;
 	font-family: 'titan one';
- }
+	text-align: center;
+
+}
 
 
 
@@ -92,7 +81,6 @@ h2{
 
 
 
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 h3{
 	font-weight: 400;
 	font-size: 1rem;
@@ -109,19 +97,11 @@ h3{
 
  /* nav logo*/
  nav:first-of-type h1 img{
-<<<<<<< HEAD
-	max-width: 15%;
+	max-width: 40%;
 	margin-left: 1em;
 	display: flex;
 	position:fixed;	
 	justify-content:flex-start;
-=======
-	max-width: 25%;
-	margin-top: 1em;
-	margin-left: 1em;
-	display: flex;
-	position:fixed;	
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 	left: 0;
 }
 
@@ -132,96 +112,92 @@ max-width: 20%;
 position:absolute;
 right: 0;
 top: 0;
-<<<<<<< HEAD
+}
+
+section:nth-of-type(1) h2{
+	display: flex;
+	justify-content: center;
 }
 
 /* first section */
 section:nth-of-type(1) img{
-	max-width: 50%;
-=======
-padding-right: 3em;
-}
-
-/* first section */
-h2:nth-of-type(1) {
-	text-transform: uppercase;
-}
-
-section:nth-of-type(1){
-	padding-bottom:20em;
-}
-
-section:nth-of-type(1) img{
-	max-width: 60%;
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
+	max-width: 80%;
 	margin: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 20em 20em 20em 20em;
-<<<<<<< HEAD
+}
+
+
+/*blik door scherm*/
+div:first-of-type{
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 2em;
+	z-index: 2;
+}
+
+
+
+
+/*select zowel blik als grid*/
+div:first-of-type img:first-of-type{
+	margin-top: 2em;
+	max-width: 10em;
 }
 
 h2:nth-of-type(1){
 	text-transform: uppercase;
-=======
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 }
 
 
-
-<<<<<<< HEAD
-=======
-
-
-
-/*second section*/
-section:nth-of-type(2) h2 {
-	text-transform: none;
-	margin: 1em;
-    font-weight: 400;
-    line-height: 1.15;
-	text-align: center;
- } 
-
-
-
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
-/* third section */
-section:nth-of-type(3) img{
-	display: flex;
-	justify-content: flex-end;
-    width: 50%;
-    height: auto;
-    border-radius: 16px;
-}
-
-
-
-
-:first-child h2{
-	font-weight: 400;
-    line-height: 1.15;
-	text-align: center;
-	margin: 0;
-
-}
-
-
-<<<<<<< HEAD
 /*man foto rechts*/
 
+/*section 2*/
 
-
- section:nth-of-type(2) h2 {
+section:nth-of-type(2) h2 {
 	margin: 1em;
     font-weight: 400;
     line-height: 1.15;
 	text-align: center;
  } 
 
-=======
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
+
+/* third section */
+
+
+section:nth-of-type(3) img{
+
+border-radius: 2em;;
+
+}
+
+section:nth-of-type(3) div {
+	overflow:hidden;
+	position: static;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+section:nth-of-type(3) img:nth-of-type(1) {
+	grid-row: 1/2;
+	grid-column: 2/4;
+	object-fit: cover;
+}
+
+section:nth-of-type(3) img:nth-of-type(2)
+ {
+	grid-column: 2;
+	grid-row: 2/4;
+}
+
+
+
+
 
 section a{
 	display: flex;
@@ -253,22 +229,12 @@ section:nth-of-type(5) img{
 
 
 /* last section 6 end of page */ 
-<<<<<<< HEAD
-=======
-
-/* HOW TO GET IMAGE IN THE MIDDLE OF THE SCREEN*/
-
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 section:nth-of-type(6) {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
   }
   
   section:nth-of-type(6) img {
-<<<<<<< HEAD
-=======
-	
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 	grid-row: 1;
   }
   
@@ -288,12 +254,7 @@ footer{
 	position: relative;
 	display: grid;
 	overflow:hidden;
-<<<<<<< HEAD
 	height: 70vh;
-	background: green;
-=======
-	height: 72vh;
->>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 }
 
 footer img{
