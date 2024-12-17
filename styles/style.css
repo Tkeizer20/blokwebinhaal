@@ -182,12 +182,16 @@ section:nth-of-type(5) img{
 
 
 /* last section 6 end of page */ 
+
+/* HOW TO GET IMAGE IN THE MIDDLE OF THE SCREEN*/
+
 section:nth-of-type(6) {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
   }
   
   section:nth-of-type(6) img {
+	
 	grid-row: 1;
   }
   
@@ -207,7 +211,7 @@ footer{
 	position: relative;
 	display: grid;
 	overflow:hidden;
-	height: 70vh;
+	height: 72vh;
 	background: green;
 }
 
