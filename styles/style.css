@@ -62,6 +62,7 @@ img {
 
 
 /*text styles*/
+<<<<<<< HEAD
 h2{
 	font-weight: 400;
 	font-size: 1.6rem;
@@ -70,6 +71,28 @@ h2{
 
 
 
+=======
+h1{
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.15;
+	margin-bottom:1.6rem;
+	text-align: center;
+	font-family: 'titan one';
+ }
+
+
+
+
+h2{
+	font-weight: 400;
+	font-size: 1.6rem;
+	font-family: 'titan one';
+ }
+
+
+
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 h3{
 	font-weight: 400;
 	font-size: 1rem;
@@ -86,11 +109,19 @@ h3{
 
  /* nav logo*/
  nav:first-of-type h1 img{
+<<<<<<< HEAD
 	max-width: 15%;
 	margin-left: 1em;
 	display: flex;
 	position:fixed;	
 	justify-content:flex-start;
+=======
+	max-width: 25%;
+	margin-top: 1em;
+	margin-left: 1em;
+	display: flex;
+	position:fixed;	
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 	left: 0;
 }
 
@@ -101,24 +132,61 @@ max-width: 20%;
 position:absolute;
 right: 0;
 top: 0;
+<<<<<<< HEAD
 }
 
 /* first section */
 section:nth-of-type(1) img{
 	max-width: 50%;
+=======
+padding-right: 3em;
+}
+
+/* first section */
+h2:nth-of-type(1) {
+	text-transform: uppercase;
+}
+
+section:nth-of-type(1){
+	padding-bottom:20em;
+}
+
+section:nth-of-type(1) img{
+	max-width: 60%;
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 	margin: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 20em 20em 20em 20em;
+<<<<<<< HEAD
 }
 
 h2:nth-of-type(1){
 	text-transform: uppercase;
+=======
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 }
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+/*second section*/
+section:nth-of-type(2) h2 {
+	text-transform: none;
+	margin: 1em;
+    font-weight: 400;
+    line-height: 1.15;
+	text-align: center;
+ } 
+
+
+
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 /* third section */
 section:nth-of-type(3) img{
 	display: flex;
@@ -140,6 +208,7 @@ section:nth-of-type(3) img{
 }
 
 
+<<<<<<< HEAD
 /*man foto rechts*/
 
 
@@ -151,6 +220,8 @@ section:nth-of-type(3) img{
 	text-align: center;
  } 
 
+=======
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 
 section a{
 	display: flex;
@@ -182,12 +253,22 @@ section:nth-of-type(5) img{
 
 
 /* last section 6 end of page */ 
+<<<<<<< HEAD
+=======
+
+/* HOW TO GET IMAGE IN THE MIDDLE OF THE SCREEN*/
+
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 section:nth-of-type(6) {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
   }
   
   section:nth-of-type(6) img {
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 	grid-row: 1;
   }
   
@@ -207,8 +288,12 @@ footer{
 	position: relative;
 	display: grid;
 	overflow:hidden;
+<<<<<<< HEAD
 	height: 70vh;
 	background: green;
+=======
+	height: 72vh;
+>>>>>>> 2d71adad07c0b10a969cefebe07a099bfcf9f4ec
 }
 
 footer img{
