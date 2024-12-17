@@ -62,6 +62,18 @@ img {
 
 
 /*text styles*/
+h1{
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.15;
+	margin-bottom:1.6rem;
+	text-align: center;
+	font-family: 'titan one';
+ }
+
+
+
+
 h2{
 	font-weight: 400;
 	font-size: 1.6rem;
@@ -86,11 +98,11 @@ h3{
 
  /* nav logo*/
  nav:first-of-type h1 img{
-	max-width: 15%;
+	max-width: 25%;
+	margin-top: 1em;
 	margin-left: 1em;
 	display: flex;
 	position:fixed;	
-	justify-content:flex-start;
 	left: 0;
 }
 
@@ -101,11 +113,20 @@ max-width: 20%;
 position:absolute;
 right: 0;
 top: 0;
+padding-right: 3em;
 }
 
 /* first section */
+h2:nth-of-type(1) {
+	text-transform: uppercase;
+}
+
+section:nth-of-type(1){
+	padding-bottom:20em;
+}
+
 section:nth-of-type(1) img{
-	max-width: 50%;
+	max-width: 60%;
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -113,9 +134,19 @@ section:nth-of-type(1) img{
 	border-radius: 20em 20em 20em 20em;
 }
 
-h2:nth-of-type(1){
-	text-transform: uppercase;
-}
+
+
+
+
+
+/*second section*/
+section:nth-of-type(2) h2 {
+	text-transform: none;
+	margin: 1em;
+    font-weight: 400;
+    line-height: 1.15;
+	text-align: center;
+ } 
 
 
 
@@ -139,17 +170,6 @@ section:nth-of-type(3) img{
 
 }
 
-
-/*man foto rechts*/
-
-
-
- section:nth-of-type(2) h2 {
-	margin: 1em;
-    font-weight: 400;
-    line-height: 1.15;
-	text-align: center;
- } 
 
 
 section a{
@@ -212,7 +232,6 @@ footer{
 	display: grid;
 	overflow:hidden;
 	height: 72vh;
-	background: green;
 }
 
 footer img{
