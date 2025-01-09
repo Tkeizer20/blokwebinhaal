@@ -92,7 +92,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik vond het lastig om te zien hoe ik op een correcte manier de sections te selecteren zonder aand div's te denken.
+
+  Daarbij had ik de opbouw met alle afbeeldingen snel in een mapje kunnen zetten incl fonts.
+
 
 
   ### Agenda voor meeting
@@ -107,12 +110,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+  Na het eerste voortgangsgesprek ben ik de hele main vergeten neer te zetten in de html.
+  Voor de rest gekeken hoe ik het beste dingen kon targeten via css voor de styling.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  Daarbij vind ik het wel lastig me te bedenken hoe ik de 2e pagina ga stylen omdat de componenten van deze pagina overeenkomen met de css van de styling van pagina 2.
+ 
+  - Goed kijken of de html correct in elkaar zit
+  - Via nth of type kan ik alle sections selecteren
+  - 
 </details>
 
 
@@ -125,7 +130,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik was de goede richting op aan het gaan en daarbij kreeg ik het advies om alles in grids te verwerken om later werk te besparen om het responsive te maken.
+
+  Hierin begrijp ik alleen niet hoe grids goed werkt en hoe je alles kan opstellen.
+
+  Ook heb ik me ingelezen en video's gekeken over wat intersection observer is en waarvoor het gebruikt wordt en wat je ermee kan.
+
+  Dit wil ik gaan gebruiken om het gemakkelijk responsive te maken van het blikje dat in het midden van scherm hangt zodat die stopt in de laatste section img. Hierdoor moet ik anders voor elk formaat scherm een ander stop punt aanmaken en dit kost uiteindelijk meer tijd waarschijnlijk dan intersection observer API te gebruiken.
+
 
 
   ### Agenda voor meeting
@@ -141,10 +153,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - afbeeldingen niet als eerst neer zetten in html, beter omdraaien en met grid weer terug naar boven werken.
+  - Grids gebruiken voor makkelijke aanpassingen van waar wat moet komen te staan.
+  - Weten wanneer je wel of niet een div mag gebruiken.
+  - Het leren begrijpen van intersection observer in javascript.
+  - javascript is niet mijn sterkste punt.
 
 </details>
 
@@ -172,7 +185,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
 
 
   ### Agenda voor meeting
@@ -233,8 +246,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. MDN
   2. bron 2
-  3. ...
+  3. Intersection observer JS uitleg
+  https://chatgpt.com/share/677fe3e5-668c-800e-949d-b5229f4885f0 
 
 </details>
