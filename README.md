@@ -47,6 +47,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Duurzaamheid pagina 
   <img src="readme-images/page_2.png" width="375px" alt="omschrijving van de pagina">
  
+  #### Screenshot(s) van de breakdown:
+  <img src="readme-images/breakdown.webp" width="375px" alt="omschrijving van de pagina">
+
 </details>
 
 
