@@ -61,6 +61,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Geen dark mode vanwege kleur gebruik
+  - Screen reader werkt amper,
+  - Screen reader werkt eerste 4/5 tabs en dan skipt die volledig de content
+  - Website gebruikt geen h1 maar p voor gebruik van titels
+  <img src="readme-images/test_1.webp" width="375px" alt="test pagina 1">
+  <img src="readme-images/test_2.webp" width="375px" alt="test pagina 2">
+  <img src="readme-images/test_3.webp" width="375px" alt="test pagina 3">
+  <img src="readme-images/test_4.webp" width="375px" alt="test pagina 4">
+  <img src="readme-images/test_5.webp" width="375px" alt="test pagina 5">
 
 </details>
 
@@ -172,6 +181,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  
+  
 
 </details>
 
