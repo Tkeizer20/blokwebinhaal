@@ -69,7 +69,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/test_2.webp" width="375px" alt="test pagina 2">
   <img src="readme-images/test_3.webp" width="375px" alt="test pagina 3">
   <img src="readme-images/test_4.webp" width="375px" alt="test pagina 4">
-  <img src="readme-images/test_5.webp" width="375px" alt="test pagina 5">
+  <img src="readme-images/test5.webp" width="375px" alt="test pagina 5">
 
 </details>
 
