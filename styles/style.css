@@ -737,7 +737,7 @@ section:nth-of-type(6) div{
 @media (min-width: 1300px){
 
 body {
-        background-image: url(/images/fullscreen.svg);
+        background-image: url(./images/fullscreen.svg);
 		background-repeat: no-repeat;
 		background-size:contain;
 		background-position: 50% 50%;
