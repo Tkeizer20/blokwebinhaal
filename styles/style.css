@@ -801,14 +801,14 @@ section:nth-of-type(1) img{
 
 main>section:nth-of-type(1) img:nth-of-type(2){
 display:block ;
-max-width: 40%;
+max-width: 50%;
 margin: auto;
 top: 0;
 right: 0;
 left: 0;
 position: absolute;
 transform: translateY(-4em);
-border-radius: 0em 0em 15em 15em;
+border-radius: 0em 0em 40em 40em;
 }
 
 section:nth-of-type(1) {
@@ -818,11 +818,11 @@ section:nth-of-type(1) {
 
 section:nth-of-type(1) h2:nth-of-type(1){
 			font-size: 5.2rem;
-			margin: 0em 2em 0em 2em;
+			margin: 1em 2em 0em 2em;
 		}
 section:nth-of-type(1) h2:nth-of-type(2){
 				font-size: 4.2rem;
-				padding: 0em 3em 0em 4em;
+				padding: 0em 5em 0em 5em;
 			}
 
 		
@@ -1005,9 +1005,8 @@ footer>section:nth-of-type(1) img{
 
 
 
+
 }
-
-
 
 
 
