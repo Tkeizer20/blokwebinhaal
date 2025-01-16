@@ -96,9 +96,10 @@ h3{
 
 
  /* nav logo*/
- nav:first-of-type h1 img{
-	max-width: 20%;
-	margin-left: 1em;
+ header:first-of-type h1 img:nth-of-type(1){
+	max-width: 30%;
+	margin-left: .5em;
+	margin-top: .5em;
 	position:fixed;	
 	left: 0;
 	z-index: 3;
@@ -106,39 +107,145 @@ h3{
 
 /* nav choclate drip right*/
 
-header:nth-of-type(1) img{
+header:nth-of-type(1) img:nth-of-type(1){
 max-width: 20%;
 position:absolute;
 right: 0;
 top: 0;
+margin-right: 4em;
 }
+
+
 
 /*nav hamburger menu*/
+.hidden{
+	background-image: url(../images/nav_background.svg);
+	background-size: 200%;
+	background-attachment: fixed;
+	background-position-x: 2em;;
+	background-position-y: -5em;;
+	background-repeat: no-repeat;
+}
 
-ul{
-	background-color: #613419;
-	height: 100%;
+.hidden{
+	z-index: 5;
+	height: 200vw;
 	width: 100%;
-	max-width: 60em;
+	max-width: 20em;
 	position: fixed;
 	top: 0;
-	right: -60em;
-
-
+	right: -50em;
+	transition: .3s ease;
 }
 
+.hidden.active{
+	right: 0;
+}
+/* stop scrolling*/
+body.no-scroll {
+    overflow: hidden;
+	width: 100%;
+    height: 100%;
+	transition: .1s ease;
+	backdrop-filter: blur(10em); 
+}
+	
+
+
+
+
+
+ul{
+	margin-top: 7em;
+}
 li{
+	font-size: 1.5rem;
+	font-family: "ff-meta-web-pro";
 	list-style: none;
+	text-align: center;
 	color: #ffb81d;
-	text-align:center;
 }
+
+li a{
+	font-family: "ff-meta-web-pro";
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	color: #ffb81d;
+}
+
+
+nav{
+	display: flex;
+}
+
+.ham_menu{
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: 1em;
+	position: relative;
+}
+
+
+/* hamburger styling */
+.ham_menu span{
+	height: 5px;
+	width: 100%;
+	background-color:var(--color-text);
+	border-radius: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .3s ease;
+	z-index: 5;
+}
+
+.ham_menu span:nth-child(1){
+	top: 25%;
+}
+
+.ham_menu span:nth-child(2){
+	top: 75%;
+}
+
+/* cross when clicking */
+
+.ham_menu.active span:nth-child(1){
+	background-color: #ffb81d;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham_menu.active span:nth-child(2){
+opacity: 0;
+}
+
+.ham_menu.active span:nth-child(3){
+	background-color: #ffb81d;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* first section */
 
 
 section:nth-of-type(1){
 	display: grid;
-	grid-template-rows: 1fr 0.1fr 0.1fr;
+	grid-template-rows: .1fr 0.1fr 0.1fr;
 
 }
 
@@ -149,6 +256,7 @@ section:nth-of-type(1) img:nth-of-type(2){
 section:nth-of-type(1) img{
 	max-width: 80%;
 	margin: auto;
+	margin-top: -10em;
 	border-radius: 20em 20em 20em 20em;
 	grid-row: 1;
 	align-items: center;
@@ -387,6 +495,10 @@ section:nth-of-type(6) {
 	align-content: center;
   }
 
+  section:nth-of-type(7) h2{
+	display: none;
+  }
+
 
 section:nth-of-type(7) a{
 	text-align: center;
@@ -410,7 +522,7 @@ section:nth-of-type(7) img{
 
 
   
-  section:nth-of-type(7) div:nth-of-type(1){
+section:nth-of-type(7) div:nth-of-type(1){
 	background-color:#ffcb7c ;
 	width: 3rem;
 	height: 3rem;
@@ -475,24 +587,583 @@ footer>img:nth-of-type(1){
 	transform: translateX(20em);
 }
 
-footer>section:nth-of-type(1){
+footer>div:nth-of-type(1){
 	display: grid;
 	grid-template-columns: 1fr .5fr .5fr .5fr 1fr;
 	grid-template-rows: 1fr;
+	margin-top: 2em;
 	}
+
+footer>div:nth-of-type(1) img{
+max-width: 2em;
+		}
+		
 	
 	
-	footer>section:nth-of-type(1) img:nth-of-type(1){
+	footer>div:nth-of-type(1) img:nth-of-type(1){
 		grid-column: 2;
+		max-width: 100%;
 	}
 	
-	footer>section:nth-of-type(1) img:nth-of-type(2){
+	footer>div:nth-of-type(1) img:nth-of-type(2){
 		display: block;
 		grid-column: 3;
 	}
-	footer>section:nth-of-type(1) img:nth-of-type(3){
+	footer>div:nth-of-type(1) img:nth-of-type(3){
 		grid-column: 4;
 	}
+
+/*pagina 2*/
+/*background removal*/
+
+.duurzaamheid{
+	background-image: none;
+	}
+	
+	/* main margin*/
+	.duurzaamheid main{
+		margin: 0em 2em 0em 2em;
+	}
+	
+	.duurzaamheid section{
+		display: block;
+	}
+	.duurzaamheid main> section h2{
+		font-size: 2rem;
+	}
+	.duurzaamheid section p{
+		font-size: 1rem;
+	}
+	
+	.duurzaamheid section img{
+		border-radius: 0;
+	}
+	
+	/*section 1*/
+	
+	.duurzaamheid section:nth-of-type(1) h2{
+		margin: 3em 0em 0em 0em;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(1) p{
+		margin: 1em 0em 0em 0em;
+	
+	}
+	/*section 2*/
+	.duurzaamheid section:nth-of-type(2){
+		margin-top:8em;
+		margin-bottom:0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(2) h2:nth-of-type(1){
+		margin: 0em 0em 0em 0em;
+		text-align: center;
+		margin-bottom: 2em;
+	
+	}
+	.duurzaamheid section:nth-of-type(2) p:nth-of-type(1){
+		margin: 1em 0em 0em 0em;
+		text-align: center;
+	
+	}
+	.duurzaamheid section:nth-of-type(2) p{
+		margin: 1em 0em 0em 0em;
+		text-align: left;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(2) div:nth-of-type(1){
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		margin-right: auto;
+		transform:translateY(10em);
+		z-index: -2;
+		position: relative;
+	}
+	.duurzaamheid section:nth-of-type(2) img:nth-of-type(1){
+		max-width: 80%;
+		margin-right: auto;
+		margin-left: 2em;
+		margin-top: 0;
+		}
+	/* 2e deel section 2*/
+	
+		
+	.duurzaamheid section:nth-of-type(2) img:nth-of-type(2){
+			margin-right: auto;
+			margin-left: 0em;
+			margin-top: 0;
+			max-width: 80%;
+		}
+	
+	.duurzaamheid section:nth-of-type(2) p:nth-of-type(3){
+		margin: 0em 0em 13em 0em;
+		}
+	
+	.duurzaamheid section:nth-of-type(2) div:nth-of-type(2){
+			background-color:#ffcb7c ;
+			width: 9em;
+			height: 9em;
+			border-radius: 50%;
+			margin-left: auto;
+			transform:translateY(10em);
+			z-index: -2;
+			position: relative;
+		}
+	
+	
+	/* section 3 */
+	
+	.duurzaamheid section:nth-of-type(3){
+			align-items: center;
+	}
+	.duurzaamheid section:nth-of-type(3) img:nth-of-type(1){
+		margin-left: auto;
+		margin-right: auto;
+		filter: drop-shadow(0 16px 16px rgba(97, 52, 25, .4));
+	}
+	.duurzaamheid section:nth-of-type(3) h2{
+		text-align: center;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	
+	.duurzaamheid section:nth-of-type(3) p{
+		text-align: center;
+		margin: 0;
+	}
+	
+	/* section 4 */
+	.duurzaamheid section:nth-of-type(4){
+		margin: 0;
+	}
+	
+	.duurzaamheid section:nth-of-type(4) img:nth-of-type(1){
+		margin-top: 4em;
+		border-radius: 0;
+		max-width: 100%;
+		
+	}
+	.duurzaamheid section:nth-of-type(4) h2{
+	margin: 4em 0em 0em 0em;
+	text-align: center;
+	text-transform:uppercase;
+	
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(4) p{
+		text-align: center;	
+		margin: 0;
+	}
+	
+	/* section 5*/
+	.duurzaamheid section:nth-of-type(5){
+		margin: 0;
+	}
+	
+	.duurzaamheid section:nth-of-type(5) h2{
+		margin: 1em 0em 0em 0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(5) p{
+		margin: 1em 0em 0em 0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(5){
+		margin: 0;
+	}
+	
+	
+	
+	/* section 6 stappen plan */
+	.duurzaamheid section:nth-of-type(6){
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+		margin: 0em 0em 0em 0em;
+	}
+	.duurzaamheid section:nth-of-type(6) h2{
+		margin: 0em 0em 0em 0em;
+		text-align: left;
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(6) img:nth-of-type(1){
+		grid-column: 1;
+		grid-row: 1;
+		max-width: 70%;
+		margin: 5em 0em 0em 3em;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) div:nth-of-type(1){
+		grid-column: 1;
+		grid-row: 1;
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+		margin: 5em 0em 0em 0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) h2:nth-of-type(1){
+		margin: 0em 0em 4em 0em;
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) img:nth-of-type(2){
+		grid-column: 1;
+		grid-row: 3;
+		max-width: 70%;
+		margin: 0em 0em 0em 0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) div:nth-of-type(2){
+		grid-column: 1;
+		grid-row: 3;
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(6) h2:nth-of-type(2){
+		margin: 0em 0em 4em 0em;
+		grid-column: 1;
+		grid-row: 4;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) img:nth-of-type(3){
+		grid-column: 1;
+		grid-row: 5;
+		max-width: 70%;
+		margin: 0em 0em 0em 0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) div:nth-of-type(3){
+		grid-column: 1;
+		grid-row: 5;
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(6) h2:nth-of-type(3){
+		margin: 0em 0em 4em 0em;
+		grid-column: 1;
+		grid-row: 6;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) img:nth-of-type(4){
+		grid-column: 1;
+		grid-row: 7;
+		max-width: 70%;
+		margin: 0em 0em 0em 0em;
+	}
+	
+	.duurzaamheid section:nth-of-type(6) div:nth-of-type(4){
+		grid-column: 1;
+		grid-row: 7;
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(6) h2:nth-of-type(4){
+		margin: 0em 0em 4em 0em;
+		grid-column: 1;
+		grid-row: 8;
+	}
+	
+	/* section 7 toekomst 1 section met een auto row grid*/
+	.duurzaamheid section:nth-of-type(7){
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: .5fr auto;
+	}
+	
+	.duurzaamheid section:nth-of-type(7) h2{
+		display: block;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) p{
+		text-align: left;
+	
+	}
+	
+	/* 1e deel toekomst */
+	
+	.duurzaamheid section:nth-of-type(7) h2:nth-of-type(1){
+		grid-column: 1;
+		grid-row: 1;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) img:nth-of-type(1){
+		grid-column: 1;
+		grid-row: 2;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) p:nth-of-type(1){
+		grid-column: 1;
+		grid-row: 3;
+	
+	}
+	
+	/* 3e deel toekomst */
+	
+	.duurzaamheid section:nth-of-type(7) h2:nth-of-type(2){
+		grid-column: 1;
+		grid-row: 4;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) img:nth-of-type(2){
+		grid-column: 1;
+		grid-row: 5;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) p:nth-of-type(2){
+		grid-column: 1;
+		grid-row: 6;
+	
+	}
+	
+	/* 3e deel toekomst */
+	
+	.duurzaamheid section:nth-of-type(7) h2:nth-of-type(3){
+		grid-column: 1;
+		grid-row: 7;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) img:nth-of-type(3){
+		grid-column: 1;
+		grid-row: 8;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) p:nth-of-type(3){
+		grid-column: 1;
+		grid-row: 9;
+	
+	}
+	
+	/* 4e deel toekomst */
+	
+	.duurzaamheid section:nth-of-type(7) h2:nth-of-type(4){
+		grid-column: 1;
+		grid-row: 10;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) img:nth-of-type(4){
+		grid-column: 1;
+		grid-row: 11;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) p:nth-of-type(4){
+		grid-column: 1;
+		grid-row: 12;
+	
+	}
+	/* toekomst 5e deel */
+	.duurzaamheid section:nth-of-type(7) h2:nth-of-type(5){
+		grid-column: 1;
+		grid-row: 13;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) img:nth-of-type(5){
+		grid-column: 1;
+		grid-row: 14;
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(7) p:nth-of-type(5){
+		grid-column: 1;
+		grid-row: 15;
+	
+	}
+	
+	
+	/* section 8 weidemelk */
+	.duurzaamheid section:nth-of-type(8){
+		display: grid;
+		grid-template-columns: 2fr;
+		grid-template-rows: .5fr .1fr .1fr;
+	
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(8) div{
+		grid-column: 1;
+		grid-row: 1;
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+	}
+	
+	.duurzaamheid section:nth-of-type(8) img{
+		max-width: 70%;
+		grid-column: 1;
+		grid-row: 1;
+		margin-left: 4em;
+	}
+	
+	.duurzaamheid section:nth-of-type(8) h2{
+		grid-row: 2;
+	}
+	
+	.duurzaamheid section:nth-of-type(8) p{
+		grid-row: 3;
+		text-align: left;
+	}
+	
+	
+	/* fcs duurzaamheid section 9 */
+	
+	.duurzaamheid section:nth-of-type(9){
+		display: grid;
+		grid-template-columns: 2fr;
+		grid-template-rows: .5fr .1fr .1fr .1fr;
+	
+	
+	}
+	
+	.duurzaamheid section:nth-of-type(9) div{
+		grid-column: 1;
+		grid-row: 1;
+		background-color:#ffcb7c ;
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+		margin-left: 6em;
+	}
+	
+	.duurzaamheid section:nth-of-type(9) img{
+		max-width: 70%;
+		grid-column: 1;
+		grid-row: 1;
+	}
+	
+	.duurzaamheid section:nth-of-type(9) h2{
+		grid-row: 2;
+	}
+	
+	.duurzaamheid section:nth-of-type(9) p{
+		grid-row: 3;
+		text-align: left;
+		margin-bottom:0 ;
+	}
+	
+	.duurzaamheid section:nth-of-type(9) a{
+		margin-top: 0;
+		grid-row: 4;
+		text-decoration: none;
+		margin-bottom: 3em;
+		color: #613419;
+		font-family: 'titan one';
+		font-weight: 900;
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(9){
+		display: grid;
+		grid-template-columns: 2fr;
+		grid-template-rows: .5fr .1fr .1fr .1fr;
+	
+	
+	}
+	
+	/* rain forest duurzaamheid section 10 */
+	
+	.duurzaamheid section:nth-of-type(10){
+		display: grid;
+		grid-template-columns: 2fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr;
+	
+	
+	}
+	
+	
+	.duurzaamheid section:nth-of-type(10) img:nth-of-type(1){
+		max-width: 70%;
+		grid-column: 1;
+		grid-row: 1;
+		margin-left: auto;
+		margin-right: auto;
+		filter: drop-shadow(0 16px 16px rgba(97, 52, 25, .4));
+	}
+	
+	.duurzaamheid section:nth-of-type(10) h2{
+		grid-row: 2;
+		text-align: center;
+	}
+	
+	.duurzaamheid section:nth-of-type(10) p{
+		grid-row: 3;
+		text-align: left;
+		margin-bottom: 2em;
+	}
+	
+	.duurzaamheid section:nth-of-type(10) a{
+		grid-column: 1;
+		grid-row: 4;
+		text-decoration: none;
+		margin-bottom: 4em;
+		color: #613419;
+		font-family: 'titan one';
+		font-size: 1rem;
+		text-align: center;
+	}
+	
+	.duurzaamheid section:nth-of-type(10) img:nth-of-type(2){
+		grid-column: 1;
+		grid-row:4;
+		max-width: 100%;
+		margin-left: 14em;
+	}
+	.duurzaamheid section:nth-of-type(10) div{
+		grid-column: 1;
+		grid-row:4;
+		background-color:#ffcb7c ;
+		width: 3em;
+		height: 3em;
+		border-radius: 50%;
+		z-index: -2;
+		position: relative;
+	}
+
+
+
+
 
 
 
@@ -999,9 +1670,10 @@ footer a{
 
 
 /* section 7 icons footer*/
-footer>section:nth-of-type(1) img{
+footer>div img:nth-of-type(1) {
 	display: block;
 }
+
 
 section:nth-of-type(7) a{
 	font-size: 1.5rem;
@@ -1051,3 +1723,444 @@ margin: 1em 5em 1em 5em;
 
 }
 
+/*media responsive points pagina 2*/
+
+@media (min-width: 760px){
+	.duurzaamheid section:nth-of-type(1) h2:nth-of-type(1){
+		font-size: 4rem;
+
+	}
+
+	.duurzaamheid section:nth-of-type(1) p:nth-of-type(1){
+		font-size: 1.8rem;
+
+	}
+
+
+	.duurzaamheid  section p{
+		font-size: 1.5rem;
+	}
+
+	.duurzaamheid section:nth-of-type(10) img:nth-of-type(1){
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.duurzaamheid section:nth-of-type(10) a{
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1000px){
+.duurzaamheid main{
+	margin: 0em 10em 0em 10em;
+}
+
+
+
+/* cirkels achter section 2 groter */
+.duurzaamheid section:nth-of-type(2) div:nth-of-type(1){
+	width: 20em;
+	height: 20em;
+}
+.duurzaamheid section:nth-of-type(2) div:nth-of-type(1){
+	width: 20em;
+	height: 20em;
+}
+.duurzaamheid section:nth-of-type(2) div:nth-of-type(2){
+	width: 20em;
+	height: 20em;
+}
+
+/* cirkels achter section 6 stappenplan groter */
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(1){
+	width: 20em;
+	height: 20em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(2){
+	width: 20em;
+	height: 20em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(3){
+	width: 20em;
+	height: 20em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(4){
+	width: 20em;
+	height: 20em;
+}
+}
+
+@media (min-width: 1400px){
+
+.duurzaamheid main{
+	margin: 0em 15.5em 0em 15.5em;
+}
+
+/* duurzaamheid section 2 */
+
+.duurzaamheid section:nth-of-type(2){
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .5fr auto;
+	margin-bottom: 20em;
+}
+
+.duurzaamheid section:nth-of-type(2) h2{
+grid-column: 1/3 ;
+grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(2) p:nth-of-type(1){
+	grid-column: 1/3;
+	grid-row: 2;
+	margin: 0em 0em 8em 0em;
+	padding: 0;
+}
+.duurzaamheid section:nth-of-type(2) img:nth-of-type(1){
+	grid-column: 1 ;
+	grid-row: 3;
+	}
+.duurzaamheid section:nth-of-type(2) div:nth-of-type(1){
+		grid-column: 1 ;
+		grid-row: 3;
+		transform: translateY(0)
+	}
+	.duurzaamheid section:nth-of-type(2) p:nth-of-type(2){
+		grid-column: 2;
+		grid-row: 3;
+		margin: 0;
+		padding: 0;
+	}
+
+.duurzaamheid section:nth-of-type(2) img:nth-of-type(2){
+		grid-column: 1 ;
+		grid-row: 4;
+		}
+.duurzaamheid section:nth-of-type(2) div:nth-of-type(2){
+			grid-column: 1 ;
+			grid-row: 4;
+			transform: translateY(0)
+		}
+.duurzaamheid section:nth-of-type(2) p:nth-of-type(3){
+			grid-column: 2;
+			grid-row: 4;
+			margin: 0;
+			padding: 0;
+		}
+
+
+/* section 3 duurzaamheid */
+
+.duurzaamheid section:nth-of-type(3) img:nth-of-type(1){
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto ;
+}
+
+.duurzaamheid section:nth-of-type(3) h2:nth-of-type(1){
+	margin: 0;
+	padding: 0;
+}
+
+.duurzaamheid section:nth-of-type(3) p:nth-of-type(1){
+	margin: 0;
+	padding: 0;
+}
+
+.duurzaamheid section:nth-of-type(3) p:nth-of-type(2){
+	margin: 0;
+	padding: 0;
+}
+/* tussen strook duurzaamheid section 4 */
+section:nth-of-type(4) img:nth-of-type(1){
+	margin: 0;
+}
+
+/* h2 align section 5 */
+section:nth-of-type(5) h2:nth-of-type(1){
+	text-align: center;
+}
+
+/* grid aanpassing 2 columns section 6*/
+.duurzaamheid section:nth-of-type(6){
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .5fr auto;
+	margin-top: 10em;
+}
+
+.duurzaamheid section:nth-of-type(6) h2{
+	font-size: 2rem;
+}
+
+.duurzaamheid section:nth-of-type(6) img:nth-of-type(1){
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(1){
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0em 0em 0em 0em;
+}
+.duurzaamheid section:nth-of-type(6) h2:nth-of-type(1){
+	grid-column: 2/3;
+	grid-row: 1;
+	margin-top: 1em;
+}
+
+.duurzaamheid section:nth-of-type(6) img:nth-of-type(2){
+	grid-column: 2;
+	grid-row: 2;
+	margin: 0em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(2){
+	grid-column: 2;
+	grid-row: 2;
+	margin: 0em 0em 0em 0em;
+}
+.duurzaamheid section:nth-of-type(6) h2:nth-of-type(2){
+	grid-column: 1;
+	grid-row: 2;
+	margin-top: 1em;
+}
+
+.duurzaamheid section:nth-of-type(6) img:nth-of-type(3){
+	grid-column: 1;
+	grid-row: 3;
+	margin: 0em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(3){
+	grid-column: 1;
+	grid-row: 3;
+	margin: 0em 0em 0em 0em;
+}
+.duurzaamheid section:nth-of-type(6) h2:nth-of-type(3){
+	grid-column: 2;
+	grid-row: 3;
+	margin-top: 1em;
+}
+
+.duurzaamheid section:nth-of-type(6) img:nth-of-type(4){
+	grid-column: 2;
+	grid-row: 4;
+	margin: 0em;
+}
+.duurzaamheid section:nth-of-type(6) div:nth-of-type(4){
+	grid-column: 2;
+	grid-row: 4;
+	margin: 0em 0em 0em 0em;
+}
+.duurzaamheid section:nth-of-type(6) h2:nth-of-type(4){
+	grid-column: 1;
+	grid-row: 4;
+	margin-top: 1em;
+}
+
+/* section 7 duurzaamheid grid aanpassing 2 columns */
+.duurzaamheid section:nth-of-type(7){
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .5fr auto;
+	margin: 10em 0em 0em 0em;
+}
+
+.duurzaamheid section:nth-of-type(7) img{
+	margin: 0em 0em 0em 0em;
+}
+
+.duurzaamheid section:nth-of-type(7) h2:nth-of-type(1){
+	grid-column: 1/3;
+	text-align: center;
+
+}
+
+.duurzaamheid section:nth-of-type(7) img:nth-of-type(1){
+	grid-column: 1;
+	grid-row: 2;
+
+}
+
+.duurzaamheid section:nth-of-type(7) p:nth-of-type(1){
+	grid-column: 2;
+	grid-row: 2;
+	text-align: left;
+	margin: 5em 0em 0em 0em;
+
+}
+
+.duurzaamheid section:nth-of-type(7) h2:nth-of-type(2){
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.duurzaamheid section:nth-of-type(7) img:nth-of-type(2){
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.duurzaamheid section:nth-of-type(7) p:nth-of-type(2){
+	grid-column: 1;
+	grid-row: 3;
+	text-align: center;
+	margin-top: 4em;
+	text-align: left;
+
+}
+
+.duurzaamheid section:nth-of-type(7) h2:nth-of-type(3){
+	grid-column: 2;
+	grid-row: 4;
+}
+
+.duurzaamheid section:nth-of-type(7) img:nth-of-type(3){
+	grid-column: 1;
+	grid-row: 4;
+}
+
+.duurzaamheid section:nth-of-type(7) p:nth-of-type(3){
+	grid-column: 2;
+	grid-row: 4;
+	text-align: center;
+	margin-top: 4em;
+	text-align: left;
+
+}
+
+.duurzaamheid section:nth-of-type(7) h2:nth-of-type(4){
+	grid-column: 1;
+	grid-row: 5;
+}
+
+.duurzaamheid section:nth-of-type(7) img:nth-of-type(4){
+	grid-column: 2;
+	grid-row: 5;
+}
+
+.duurzaamheid section:nth-of-type(7) p:nth-of-type(4){
+	grid-column: 1;
+	grid-row: 5;
+	text-align: center;
+	margin-top: 4em;
+	text-align: left;
+
+}
+
+
+.duurzaamheid section:nth-of-type(7) h2:nth-of-type(5){
+	grid-column: 2;
+	grid-row: 6;
+}
+
+.duurzaamheid section:nth-of-type(7) img:nth-of-type(5){
+	grid-column: 1;
+	grid-row: 6;
+}
+
+.duurzaamheid section:nth-of-type(7) p:nth-of-type(5){
+	grid-column: 2;
+	grid-row: 6;
+	text-align: center;
+	margin-top: 4em;
+	text-align: left;
+
+}
+
+/* weide melk grid aanpassing section 8 */
+
+.duurzaamheid section:nth-of-type(8){
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .5fr auto;
+	margin: 10em 0em 0em 0em;
+}
+
+
+.duurzaamheid section:nth-of-type(8) img{
+grid-column: 1;
+grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(8) div{
+	grid-column: 1;
+	grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(8) h2{
+	grid-column: 2;
+	grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(8) p{
+	grid-column: 2;
+	grid-row: 1;
+	margin-top: 4em;
+}
+
+/* duurzaamheid fsc grid aanpassing section 9 */
+.duurzaamheid section:nth-of-type(9){
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .5fr auto;
+	margin: 10em 0em 0em 0em;
+}
+
+
+.duurzaamheid section:nth-of-type(9) img{
+grid-column: 2;
+grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(9) div{
+	grid-column: 2;
+	grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(9) h2{
+	grid-column: 1;
+	grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(9) p{
+	grid-column: 1;
+	grid-row: 1;
+	margin-top: 4em;
+}
+
+.duurzaamheid section:nth-of-type(9) a{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+/* duurzaamheid rain forest grid aanpassing section 10 */
+.duurzaamheid section:nth-of-type(10){
+	grid-template-columns: 1fr;
+	grid-template-rows: .5fr .5fr auto;
+	margin: 10em 0em 0em 0em;
+}
+
+
+.duurzaamheid section:nth-of-type(10) img:nth-of-type(1){
+grid-column: 1;
+grid-row: 2;
+}
+
+.duurzaamheid section:nth-of-type(10) h2{
+	grid-column: 1;
+	grid-row: 1;
+}
+.duurzaamheid section:nth-of-type(10) p{
+	grid-column: 1;
+	grid-row: 3;
+	padding: 0em 14em 0em 14em;
+	text-align: center;
+}
+
+.duurzaamheid section:nth-of-type(10) a{
+	grid-column: 1;
+	grid-row: 4;
+}
+
+.duurzaamheid section:nth-of-type(10) div:nth-of-type(1){
+	width: 6em;
+	height: 6em;
+	grid-column: 1;
+	grid-row: 4;
+}
+
+
+
+	
+}

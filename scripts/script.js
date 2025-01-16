@@ -1,6 +1,21 @@
 // // JavaScript Document
 // console.log("hi");
 
+
+
+const hamMenu = document.querySelector('.ham_menu');
+const hidden = document.querySelector('.hidden');
+const overlay = document.querySelector('.no-scroll');
+
+
+hamMenu.addEventListener('click', () =>{
+    hamMenu.classList.toggle('active')
+    hidden.classList.toggle('active')
+    document.body.classList.toggle('no-scroll');
+
+})
+
+
 // const blikje = document.querySelector('div:nth-of-type(1) img');
 // const stopPoint = document.querySelector('section:nth-of-type(6) div');
 
@@ -31,3 +46,5 @@
 // const target = document.querySelector("section:nth-of-type(6) div");
 
 // observer.observe(target);
+
+
