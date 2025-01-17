@@ -218,7 +218,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Het leren van klein beginnen naar grotere schermen en goed kijken hoe je bepaalde elementen
   op plekken krijgt waar ze horen te staan. 
 
-  <img src="readme-images/leer2" width="375px" alt="top">
+  <img src="readme-images/leer2.png" width="375px" alt="top">
     Voor de eerste keer eindelijk ene werkend hamburger menu kunnen coderen waar ik zeker trots op ben.
     En ook met een background image erin verwerkt die niet heel optimaal werkt maar hij is er wel.
 
